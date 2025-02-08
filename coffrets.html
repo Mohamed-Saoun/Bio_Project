@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="docs/css/styles.css" />
+        <title>Ecommerce Website</title>
+      </head>
+<body class="has-scrollbar">
+   <!-- =====header==== -->
+
+   <header>
+    <div class="overdrop" data-overdrop></div>
+
+      <nav class="header__top ">
+         <div class="logo">
+          <a href="index.html">
+            <img src="docs/img/logo.png" class="logo__header">
+          </a>
+         </div>
+         <div class="search-bar show">
+          <input type="search" placeholder="search...">
+          <div class="search-icon">
+            <i id="search" class="ri-search-line"></i>
+            <span class="alert-bar">search</span>
+          </div>
+         </div>
+         <ul class="icons__right">
+         <li><a href="#">
+          <div class="shipping">
+            <span class="alert">Ship to :</span>
+            <img src="docs/img/maroc.png" class="logo-maroc">
+            <span class="alert">Ma</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+         </a></li> 
+         <li><a href="#">
+          <div class="long">
+            <i class="ri-global-line"></i>
+            <span class="alert">France</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+         </a></li>
+         <li><a href="login.html">
+          <div class="account">
+            <i class="ri-user-fill"></i>
+            <span class="alert">sign in</span>
+          </div>
+         </a></li>
+         <li class="open-cart"><a href="cart.html">
+          <div class="cart">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="count-mini">3</span>
+          </div>
+         </a></li>
+         <li><a href="#">
+          <div class="heart">
+            <i class="ri-heart-line"></i>
+            <span class="count-mini">0</span>
+          </div>
+         </a></li>
+         </ul>
+
+        
+      </nav>
+      <div class="header__bottom">
+        <ul class="nav-bar-menu">
+          <li>
+            <a href="index.html" class="active-bar"  >home</a>
+          </li>
+
+          <li class="dropdown">
+            <a href="shop.html" >Nos huiles</a>
+            <i class="ri-arrow-down-s-line" id="arrow"></i>
+            <div class="list-fixed " id="category-drop">
+            <div class="drop-category-header">
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Prix</a></li>
+                <li><a href="#">Huiles cosmetiques </a></li>
+                <li><a href="#">Huiles vegetables</a></li>
+                <li><a href="#">Huiles complements alimentaires</a></li>
+                <li><a href="#">Nos selections</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+            </div>
+            </div>
+
+          </li>
+
+          <li>
+            <a href="fournisseur.html" >Nos fournisseurs</a>
+          </li>
+
+          <li>
+            <a href="blog.html" >Blog</a>
+          </li>
+
+          <li>
+            <a href="docs/SALMA/about1.html" >Qui sommes-nous ?</a>
+          </li>
+
+          <li>
+            <a href="contact-us.html" >Contact us</a>
+          </li>
+          
+          <li>
+            <a href="login.html" >Espace Client</a>
+          </li>
+        </ul>
+      </div>
+  </header>
+   
+  <div class="cart-drop" id="contetn-cart">
+    <div class="overcart" data-overcart></div>
+
+     <div class="products-cart">
+      <div class="cart-item">
+        <div class="img-cart">
+          <img src="docs/products-huiles/6.webp" alt="">
+        </div>
+        <p class="title-cart">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          <span class="qnty">Quantité: 1</span>
+        </p>
+        <span class="delete">
+          <i class="ri-close-circle-fill"></i>
+        </span>
+      </div>
+
+      <div class="cart-item">
+        <div class="img-cart">
+          <img src="docs/products-huiles/details1.jpg" alt="">
+        </div>
+        <p class="title-cart">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          <span class="qnty">Quantité: 1</span>
+        </p>
+        <span class="delete">
+          <i class="ri-close-circle-fill"></i>
+        </span>
+      </div>
+
+      <div class="cart-item">
+        <div class="img-cart">
+          <img src="docs/products-huiles/pack5.webp" alt="">
+        </div>
+        <p class="title-cart">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          <span class="qnty">Quantité: 1</span>
+        </p>
+        <span class="delete">
+          <i class="ri-close-circle-fill"></i>
+        </span>
+      </div>
+     
+     </div>
+     <a href="cart.html" class="seecart">Voir le panier</a>
+  </div>
+   <!-- ======header for mobile=== -->
+       
+   <div class="mobil-app-bar">
+    <div class="header-mobile">
+      <div class="top-mini">
+      <div class="logo-left">
+      <i class="ri-menu-line" id="open"></i>
+      <img src="docs/imgs-products/logo.png" class="mini-logo">
+      </div>
+      <div class="mini-icons">
+        <i class="ri-user-line"></i>
+        <i class="ri-shopping-cart-fill"></i>
+      </div>
+      </div>
+
+      <div class="search-part">
+        <input type="search" class="search-put" placeholder="search..">
+        <span class="icon-put"><i class="ri-search-line"></i></span>
+      </div>
+  
+
+    </div>
+    <div class="nav-bar-mobile">
+      <ul class="nav-icon-mobile">
+        <li class="active-mobile-app">
+          <a href="index.html" >
+          <i class="ri-home-3-line"></i>
+           <span class="alert-icon">Accuell</span>    
+          </a>
+      </li>
+      <li>
+        <a href="#" >
+          <span class="filter-icon" id="filter-show">
+            <i class="ri-equalizer-line"></i>
+            <span class="alert-icon">Filter</span>
+            </span>
+        </a>
+    </li>
+    <li>
+      <a href="index.html" >
+        <i class="ri-heart-line"></i>
+        <span class="alert-icon">Heart</span>    
+      </a>
+  </li>
+  <li>
+    <a href="index.html" >
+      <i class="ri-user-line"></i>
+     <span class="alert-icon">Compte</span>    
+    </a>
+  </li>
+      </ul>
+
+    </div>
+    </div>
+    <div class="overlay" data-overlay></div>
+    <div class="nav-menu-mobile" id="header-show">
+     <span class="clos-filter"><i class="ri-close-line"></i></span>
+      <div class="logo">
+        <img src="docs/imgs-products/logo.png" class="">
+      </div>
+      <ul class="nav-links-mobile">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Nos huiles</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+
+      <div class="btns-mobile">
+        <a href="login.html" class="login-mobile">
+          <button>Sing in</button>
+        </a>
+        <a href="login.html" class="new-mobile">
+          <button>register</button>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- ====end header== -->
+   <!-- header-coffrets -->
+      <section class="head-shop">
+            <ul>
+              <li>Home</li>
+              <li>></li>
+              <li> Huiles</li>
+              <li> ></li>
+              <li> coffrets</li>
+            </ul>
+            
+      </section>
+
+   <!-- products-coffrets -->
+ 
+      <section class="products__stock">
+      <div class="alert__top "><h1 class="pack" >COFFRETS ET ÉDITIONS LIMITÉES <i class="fa-solid fa-gift"></i></h1><p>(120items)</p></div>
+        
+      <div class="filter__flex">
+
+        <div class="filter__list-left">
+
+        <div class="category__part">
+          <ul class="category_pro">
+            <li class="active_category">Shop By Categories </li>
+              <ul class="category_mini " >
+                <li class="category__list"><a href="shop.html">Huiles essentielles</a></li>
+                <li class="category__list"><a href="shop.html">Huiles Bio</a></li>
+                <li class="category__list"><a href="coffrets.html">Nos coffrets</a></li>
+                <li class="category__list"><a href="huiles-complements.html">huiles complements alimentaires</a></li>
+              </ul>
+          </ul>
+        </div>
+        
+        <div class="price__filter">
+          <h3>Filter By </h3>
+
+          <h4>Availability</h4>
+          <div class="stock-put">
+            <input type="checkbox">
+            <span>In stock (1200)</span>
+          </div>
+          <div class="stock-put">
+            <input type="checkbox">
+            <span>Out of stock (100)</span>
+          </div>
+
+           <div class="input-price">
+               <input type="number" placeholder="From">
+               <input type="number" placeholder="To">
+           </div>
+
+           <h3 class="mltitile">Conditionnement</h3>
+           <div class="chkml">
+             <input type="checkbox">
+             <span>1 à 5l (700)</span>
+           </div>
+           <div class="chkml">
+             <input type="checkbox">
+             <span>10 à 50ml (300)</span>
+           </div>
+           <div class="chkml">
+             <input type="checkbox">
+             <span>60 à 110ml (400)</span>
+           </div>
+           <div class="chkml">
+             <input type="checkbox">
+             <span>Capsules (30)</span>
+           </div>
+      
+        </div>  
+
+        <div class="tag__filter">
+          <div class="stars">
+            <h3 class="title">évaluation clients : </h3>
+            <div class="star">
+              <input type="radio" name="star" id="stat">
+              <span>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-line gray"></i>
+                <span class="plus">et plus</span>
+              </span>
+            </div>
+            <div class="star">
+              <input type="radio" name="star" id="stat">
+              <span>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-line gray"></i>
+                <i class="ri-star-line gray"></i>
+                <span class="plus">et plus</span>
+              </span>
+            </div>
+            <div class="star">
+              <input type="radio" name="star" id="stat">
+              <span>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-line gray"></i>
+                <i class="ri-star-line gray"></i>
+                <i class="ri-star-line gray"></i>
+                <span class="plus">et plus</span>
+              </span>
+            </div>
+            <div class="star">
+              <input type="radio" name="star" id="stat">
+              <span>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-line gray"></i>
+                <i class="ri-star-line gray"></i>
+                <i class="ri-star-line gray"></i>
+                <i class="ri-star-line gray"></i>
+                <span class="plus">et plus</span>
+              </span>
+            </div>
+            
+           
+            
+          </div>
+      
+      </div>
+
+       
+       
+
+
+      
+        </div>
+      
+        <div class="products__filter-right">
+
+        <div class="products__list">
+
+          <div class="filter__buttons">
+
+            <div class="filter__buttons-left">
+              <i class="ri-grid-fill"></i>
+              <i class="ri-list-check"></i>
+            </div>
+
+            <div class="filter__buttons-right">
+              <span class="select-filter">Sort By : 
+            <select name="filter" id="" class="filter-list">
+              <option value="" >Les plus demandes</option>
+              <option value="">Les plus demandes</option>
+              <option value="">Nouvel arrivage</option>
+              <option value="">prix croissant</option>
+              <option value="">Prix decroissant</option>
+              <option value="">Les mieux notes</option>
+            </select>
+              </span>
+              <span class="show-grid">Show:
+                <select name="filter" class="filter-list">
+                  <option value="">12</option>
+                  <option value="">8</option>
+                  <option value="">16</option>
+                </select>
+
+              </span>
+
+              <span class="filter-icon" id="filter-show">
+                <i class="ri-equalizer-line"></i>
+                <p class="alert-filter">Filter</p>
+              </span>
+
+            </div>
+
+          </div>
+          <div class="products__container  grid">
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img  src="docs/products-huiles/pack14.jpg" class="product__img default"  alt="">
+      
+                  <img src="docs/products-huiles/pack14.jpg" class="product__img hover" alt="">
+                </a>
+
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+               
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+
+        
+                <div class="product__actions">
+                  <a href="#" class="action__btn heart-active" >
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                  <a href="#" class="action__btn" >
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="#" class="action__btn">
+                    <i class="fa-solid fa-shuffle"></i>
+                  </a>
+                  
+                </div>
+      
+                <div class="product__badge light-red">-40%</div>
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category"> Natulux</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    cNatulux HUILE D'ARGAN COSMETIQUE 100 ML *6
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">99.00 Dhs</span>
+                  <span class="old">120.00 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+      
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack12.jpg" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack12.jpg" class="product__img hover" alt="">
+                </a>
+
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+      
+                <div class="product__badge light-red">-30%</div>
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Huile essentielle</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Huile essentielle de Jasmin Bio Naturel
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">27.90 Dhs</span>
+                  <span class="old">40.00 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+      
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack16.webp" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack16.webp" class="product__img hover" alt="">
+                </a>
+      
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+             
+      
+                <div class="product__badge light-red">-43%</div>
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Bio</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Bio HUILE ESSENTIELLE Fleur D'oranger
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">34.20 Dhs</span>
+                  <span class="old">60.00</span>
+                </div>
+      
+               
+              </div>
+            </div>
+      
+      
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack17.webp" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack17.webp" class="product__img hover" alt="">
+                </a>
+      
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+             
+      
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">bio</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Puressentiel Huile Essentielle Palmarosa BIO 10ml
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">96.00 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack11.webp" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack11.webp" class="product__img hover" alt="">
+                </a>
+      
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+             
+      
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">bio</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Puressentiel Huile Essentielle Eucalyptus Radié Bio 10 ml
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">83.00 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack13.jpg" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack13.jpg" class="product__img hover" alt="">
+                </a>
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+             
+      
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Huile essentielle</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Huile essentielle de musc noir 15ML
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">50.20 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="detailscoff.html" class="product__images">
+                  <img src="docs/products-huiles/pack5.webp" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack5.webp" class="product__img hover" alt="">
+                </a>
+      
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+             
+      
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Huile essentielle</span>
+                <a href="detailscoff.html">
+                  <h3 class="product__title">
+                    Huile essentielle Amlou                    </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">120.00 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack6.webp" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack6.webp" class="product__img hover" alt="">
+                </a>
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+                <div class="product__badge light-red">-30%</div>
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Huile essentielle</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Huile essentielle de Jasmin Bio Naturel
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">30.90 Dhs</span>
+                  <span class="old">50.00 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+      
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack10.jpg" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack10.jpg" class="product__img hover" alt="">
+                </a>
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+             
+      
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Huile Bio</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Huile essentielle  Bio Naturel
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">27.90 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+      
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack1.jpg" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack1.jpg" class="product__img hover" alt="">
+                </a>
+      
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-line"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+             
+      
+                <div class="product__badge light-red">-35%</div>
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Huile essentielle</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Huile essentielle de Jasmin Bio Naturel
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">27.90 Dhs</span>
+                  <span class="old">40.00 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+      
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack9.webp" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack9.webp" class="product__img hover" alt="">
+                </a>
+      
+
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+             
+      
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Huile essentielle</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Huile essentielle  Bio Naturel
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">40.90 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+      
+
+            <div class="product__item prod">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="docs/products-huiles/pack2.jpg" class="product__img default" alt="">
+      
+                  <img src="docs/products-huiles/pack2.jpg" class="product__img hover" alt="">
+                </a>
+      
+                <div class="product__rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <span class="rev-cmpt">(800)</span>
+                </div>
+      
+      
+              </div>
+      
+              <div class="product__content">
+                <span class="product__category">Huile essentielle</span>
+                <a href="details.html">
+                  <h3 class="product__title">
+                    Puressentiel Huile Essentielle Eucalyptus Globuleux BIO 10 ml
+                  </h3>
+                </a>
+               
+      
+                <div class="product__price flex">
+                  <span class="new__price">64.00 Dhs</span>
+                </div>
+      
+               
+              </div>
+            </div>
+      
+          </div>
+
+      <div class="list-slide">
+          <button class="more__product" id="btn-test">Montre Plus</button>
+      </div>
+        </div>
+
+       </div>
+
+      </div>
+
+      </section>
+
+         <!-- =====shop-mobile=== -->
+    <div class="products-mobile">
+      <div class="products__container mobishop ">
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img  src="docs/products-huiles/pack14.jpg" class="product__img default"  alt="">
+  
+              <img src="docs/products-huiles/pack14.jpg" class="product__img hover" alt="">
+            </a>
+
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+           
+              <span class="rev-cmpt">(800)</span>
+            </div>
+
+    
+            <div class="product__actions">
+              <a href="#" class="action__btn heart-active" >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+              <a href="#" class="action__btn" >
+                <i class="fa-regular fa-eye"></i>
+              </a>
+              <a href="#" class="action__btn">
+                <i class="fa-solid fa-shuffle"></i>
+              </a>
+              
+            </div>
+  
+            <div class="product__badge light-red">-40%</div>
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category"> Natulux</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                cNatulux HUILE D'ARGAN COSMETIQUE 100 ML *6
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">99.00 Dhs</span>
+              <span class="old">120.00 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+  
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack12.jpg" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack12.jpg" class="product__img hover" alt="">
+            </a>
+
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+  
+            <div class="product__badge light-red">-30%</div>
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Huile essentielle</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Huile essentielle de Jasmin Bio Naturel
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">27.90 Dhs</span>
+              <span class="old">40.00 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+  
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack16.webp" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack16.webp" class="product__img hover" alt="">
+            </a>
+  
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+         
+  
+            <div class="product__badge light-red">-43%</div>
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Bio</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Bio HUILE ESSENTIELLE Fleur D'oranger
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">34.20 Dhs</span>
+              <span class="old">60.00</span>
+            </div>
+  
+           
+          </div>
+        </div>
+  
+  
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack17.webp" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack17.webp" class="product__img hover" alt="">
+            </a>
+  
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+         
+  
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">bio</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Puressentiel Huile Essentielle Palmarosa BIO 10ml
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">96.00 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack11.webp" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack11.webp" class="product__img hover" alt="">
+            </a>
+  
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+         
+  
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">bio</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Puressentiel Huile Essentielle Eucalyptus Radié Bio 10 ml
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">83.00 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack13.jpg" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack13.jpg" class="product__img hover" alt="">
+            </a>
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+         
+  
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Huile essentielle</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Huile essentielle de musc noir 15ML
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">50.20 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="detailscoff.html" class="product__images">
+              <img src="docs/products-huiles/pack5.webp" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack5.webp" class="product__img hover" alt="">
+            </a>
+  
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+         
+  
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Huile essentielle</span>
+            <a href="detailscoff.html">
+              <h3 class="product__title">
+                Huile essentielle Amlou                    </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">120.00 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack6.webp" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack6.webp" class="product__img hover" alt="">
+            </a>
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+            <div class="product__badge light-red">-30%</div>
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Huile essentielle</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Huile essentielle de Jasmin Bio Naturel
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">30.90 Dhs</span>
+              <span class="old">50.00 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+  
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack10.jpg" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack10.jpg" class="product__img hover" alt="">
+            </a>
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+         
+  
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Huile Bio</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Huile essentielle  Bio Naturel
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">27.90 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+  
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack1.jpg" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack1.jpg" class="product__img hover" alt="">
+            </a>
+  
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-line"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+         
+  
+            <div class="product__badge light-red">-35%</div>
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Huile essentielle</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Huile essentielle de Jasmin Bio Naturel
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">27.90 Dhs</span>
+              <span class="old">40.00 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+  
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack9.webp" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack9.webp" class="product__img hover" alt="">
+            </a>
+  
+
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+         
+  
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Huile essentielle</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Huile essentielle  Bio Naturel
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">40.90 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+  
+
+        <div class="product__item prod">
+          <div class="product__banner">
+            <a href="details.html" class="product__images">
+              <img src="docs/products-huiles/pack2.jpg" class="product__img default" alt="">
+  
+              <img src="docs/products-huiles/pack2.jpg" class="product__img hover" alt="">
+            </a>
+  
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <span class="rev-cmpt">(800)</span>
+            </div>
+  
+  
+          </div>
+  
+          <div class="product__content">
+            <span class="product__category">Huile essentielle</span>
+            <a href="details.html">
+              <h3 class="product__title">
+                Puressentiel Huile Essentielle Eucalyptus Globuleux BIO 10 ml
+              </h3>
+            </a>
+           
+  
+            <div class="product__price flex">
+              <span class="new__price">64.00 Dhs</span>
+            </div>
+  
+           
+          </div>
+        </div>
+  
+      </div>
+      </div>
+ 
+   <!-- footer -->
+      <footer class="footer container">
+            <div class="footer__container">
+          <div class="footer__content">
+            <a href="index.html" class="footer__logo">
+              <img src="docs/imgs-products/logo.png" class="footer__logo-img" >
+            </a>
+          <h4 class="footer__subtitle">Contact</h4>
+          <p class="footer__description">
+            <span>Adress:</span> 999 Marrakech, OFPPT  street Dwar Dlam 
+          </p>
+          <p class="footer__description">
+            <span>Phone:</span> +212 675789976
+          </p>
+          <p class="footer__description">
+           <span> Hours:</span> 9:00 - 20:00 
+          </p>
+      
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Follow Us</h4>
+      
+            <div class="footer__social-links">
+              <a href="#"><i id="fb" class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i id="insta" class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i id="tiktok" class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i id="twiter" class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+      
+          </div>
+      
+          <div class="footer__content">
+            <h3 class="footer__subtitle">Address</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li><a href="#" class="footer__link">Delivery information</a></li>
+              <li><a href="#" class="footer__link">Privery Policy</a></li>
+              <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+              <li><a href="#" class="footer__link">Support</a></li>
+            </ul>
+          
+      
+          </div>
+      
+          <div class="footer__content">
+            <h4 class="footer__subtitle">My Account</h4>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Sign in</a></li>
+              <li><a href="#" class="footer__link"> View Cart</a></li>
+              <li><a href="#" class="footer__link">My Wishlist</a></li>
+              <li><a href="#" class="footer__link">Track My Order</a></li>
+              <li><a href="#" class="footer__link">Help</a></li>
+              <li><a href="#" class="footer__link">Order</a></li>
+            </ul>
+          
+      
+          </div>
+      
+          <div class="footer__content">
+            <h4 class="footer__subtitle">Secured Payment Gateways</h4>
+            <img src="docs/img/payment-method.png" class="payment__img" alt="">
+          </div>
+      
+            </div>
+      
+            <div class="footer__bottom">
+          <p class="copyright">&copy; 2023 BIO ET BIEN ETRE </p>
+          <span class="dev">Developed By : <span>Sari - Aimran -Ibaali - <br>Sara- Salma</span></span>
+            </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="docs/js/main.js"></script>
+    
+</body>
+</html>

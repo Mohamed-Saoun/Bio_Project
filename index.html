@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="docs/css/styles.css" />
+  <title>Ecommerce Website</title>
+</head>
+
+<body class="has-scrollbar">
+
+  <!-- ====modal notification ==== -->
+  <div class="modal-notification " id="modal">
+
+    <div class="modal-content">
+      <i class="ri-close-line" id="close-modal"></i>
+      <div class="modal-text">
+        <h2 class="modal-title">Inscrivez vous à notre newsetter</h2>
+        <p class="modal-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, soluta? <span>5% de
+            réduction</span> à partir de 120Dhs </p>
+        <div class="modal-input">
+          <i class="ri-mail-line"></i>
+          <input type="search" name="" id="" placeholder="votreemail@email.com">
+        </div>
+        <a href="#" class="modal-link">S'inscrire</a>
+      </div>
+      <div class="modal-img">
+        <img src="docs/img/homebio.png" alt="">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =====header==== -->
+
+  <header>
+    <div class="overdrop" data-overdrop></div>
+
+    <nav class="header__top ">
+      <div class="logo">
+        <a href="index.html">
+          <img src="docs/img/logo.png" class="logo__header">
+        </a>
+      </div>
+      <div class="search-bar show">
+        <input type="search" placeholder="search..." id="searchBar">
+        <div class="search-icon">
+          <i id="search" class="ri-search-line"></i>
+          <span class="alert-bar">search</span>
+        </div>
+      </div>
+      <ul class="icons__right">
+        <li><a href="#">
+            <div class="shipping">
+              <span class="alert">Ship to :</span>
+              <img src="docs/img/maroc.png" class="logo-maroc" alt="img">
+              <span class="alert">Ma</span>
+              <i class="ri-arrow-down-s-line" style="color: #000;"></i>
+            </div>
+          </a></li>
+        <li><a href="#">
+            <div class="long">
+              <i class="ri-global-line"></i>
+              <span class="alert">France</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </a></li>
+        <li><a href="login.html">
+            <div class="account">
+              <i class="ri-user-fill"></i>
+              <span class="alert">sign in</span>
+            </div>
+          </a></li>
+        <li class="open-cart"><a href="cart.html">
+            <div class="cart">
+              <i class="ri-shopping-cart-line"></i>
+              <span class="count-mini" id="count"></span>
+            </div>
+          </a></li>
+        <li><a href="#">
+            <div class="heart">
+              <i class="ri-heart-line"></i>
+              <span class="count-mini">0</span>
+            </div>
+          </a></li>
+      </ul>
+
+
+    </nav>
+    <div class="header__bottom">
+      <ul class="nav-bar-menu">
+        <li>
+          <a href="index.html" class="active-bar">home</a>
+        </li>
+
+        <li class="dropdown">
+          <a href="shop.html">Nos huiles</a>
+          <i class="ri-arrow-down-s-line" id="arrow"></i>
+          <div class="list-fixed " id="category-drop">
+            <div class="drop-category-header">
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Prix</a></li>
+                <li><a href="#">Huiles cosmetiques </a></li>
+                <li><a href="#">Huiles vegetables</a></li>
+                <li><a href="#">Huiles complements alimentaires</a></li>
+                <li><a href="#">Nos selections</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </li>
+
+        <li>
+          <a href="fournisseur.html">Nos fournisseurs</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+
+        <li>
+          <a href="docs/SALMA/about1.html">Qui sommes-nous ?</a>
+        </li>
+
+        <li>
+          <a href="docs/contact us/contact-us.html">Contact us</a>
+        </li>
+
+        <li>
+          <a href="./login.html">Espace Client</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="cart-drop " id="contetn-cart">
+    <div class="overcart" data-overcart></div>
+
+    <div class="products-cart has-scrollbar">
+
+     <div class="total__test">
+        <span class="alert__cart">Total Price: </span>
+      <span class="total"> </span>
+     </div>
+      
+    </div>
+    <a href="cart.html" class="seecart">Voir le panier</a>
+  </div>
+
+  <!-- ======header for mobile=== -->
+
+  <div class="mobil-app-bar">
+    <div class="header-mobile">
+      <div class="top-mini">
+        <div class="logo-left">
+          <i class="ri-menu-line" id="open"></i>
+          <img src="docs/imgs-products/logo.png" class="mini-logo">
+        </div>
+        <div class="mini-icons">
+          <i class="ri-user-line"></i>
+          <i class="ri-shopping-cart-fill" id="cart-btn"></i>
+        </div>
+      </div>
+
+      <div class="search-part">
+        <input type="search" class="search-put" placeholder="search..">
+        <span class="icon-put"><i class="ri-search-line"></i></span>
+      </div>
+
+
+    </div>
+    <div class="nav-bar-mobile">
+      <ul class="nav-icon-mobile">
+        <li class="active-mobile-app">
+          <a href="index.html">
+            <i class="ri-home-3-line"></i>
+            <span class="alert-icon">Accuell</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <i class="ri-grid-fill"></i>
+            <span class="alert-icon">Catégorie</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <i class="ri-heart-line"></i>
+            <span class="alert-icon">Favourites</span>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="ri-user-line"></i>
+            <span class="alert-icon">Compte</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="overlay" data-overlay></div>
+  <div class="nav-menu-mobile" id="header-show">
+    <span class="clos-filter"><i class="ri-close-line"></i></span>
+    <div class="logo">
+      <img src="docs/imgs-products/logo.png" class="">
+    </div>
+    <ul class="nav-links-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Nos huiles</a></li>
+      <li><a href="coffrets.html">Nos coffret</a></li>
+      <li><a href="fournisseur.html">Nos fournisseurs</a></li>
+      <li><a href="docs/SALMA/about1.html">Qui sommes-nous ?</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="login.html">Espace Client</a></li>
+    </ul>
+
+    <div class="btns-mobile">
+      <a href="login.html" class="login-mobile">
+        Sing in
+      </a>
+      <a href="login.html" class="new-mobile">
+        register
+      </a>
+    </div>
+  </div>
+
+  <!-- ===home==== -->
+
+  <!-- =====reload=== -->
+  <div class="loader"></div>
+  <!-- =========== -->
+
+  <section class="homepage">
+    <div class="swiper home__pages">
+      <div class="swiper-wrapper">
+
+        <div class="home__item swiper-slide test-b">
+          <div class="home__content">
+            <div class="test-home">Favoris 2024</div>
+            <h1 class="home__title">
+              DECOUVREZ NOS HUILES <br>ESSENTIELLE
+            </h1>
+            <p class="home__para">
+              De qualite superiure:100 naturelles integrales lorem lorem
+            </p>
+            <a href="#" class="home__btn">Je découvre</a>
+          </div>
+        </div>
+        <div class="tem2 swiper-slide test-b">
+          <div class="home__content">
+            <div class="test-home"> Indispenable</div>
+
+            <h1 class="home__title">
+              DECOUVREZ NOS HUILES <br><span>BIO BIEN ETRE</span>
+            </h1>
+            <p class="home__para">
+              De qualite superiure:100 naturelles integrales lorem lorem
+            </p>
+            <a href="#" class="home__btn">Je découvre</a>
+          </div>
+        </div>
+
+
+        <div class="tem3 swiper-slide test-b">
+          <div class="home__content">
+            <div class="test-home"> Maux de l'hiver</div>
+
+
+            <h1 class="home__title">
+              DECOUVREZ NOS HUILES <br> complement
+            </h1>
+            <p class="home__para">
+              De qualite superiure:100 naturelles integrales lorem lorem
+            </p>
+            <a href="#" class="home__btn">Je découvre</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next">
+        <i class="ri-arrow-right-circle-fill"></i>
+      </div>
+      <div class="swiper-button-prev">
+        <i class="ri-arrow-left-circle-fill"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== brand==== -->
+  <section class="brand">
+    <div class="brand__items">
+      <div class="brand__item b1">
+        <div class="brand__content">
+          <h2 class="brand__titlemin">Best Collections</h2>
+          <h1 class="brand__title"><span>BESTE</span> OFFERS</h1>
+          <h3>Get Upto 30% Off</h3>
+          <a href="#" class="brand__link">See More</a>
+        </div>
+        <div class="brand__img">
+        </div>
+      </div>
+      <div class="brand__item bg2">
+        <div class="brand__content">
+          <h2 class="brand__titlemin">Best Collections</h2>
+          <h1 class="brand__title"><span>BESTE</span> OFFERS</h1>
+          <h3>Get Upto 30% Off</h3>
+          <a href="#" class="brand__link">See More</a>
+        </div>
+        <div class="brand__img">
+        </div>
+      </div>
+      <div class="brand__item bg3">
+        <div class="brand__content">
+          <h2 class="brand__titlemin">Best Collections</h2>
+          <h1 class="brand__title"><span>BESTE</span> OFFERS</h1>
+          <h3>Get Upto 30% Off</h3>
+          <a href="#" class="brand__link">See More</a>
+        </div>
+        <div class="brand__img">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ======categories===  -->
+  <section class="categories">
+
+
+    <div class="categories__container">
+      <h2 class="categoriy__title">
+        H<i class="ri-fire-fill"></i>Ot categories
+      </h2>
+
+      <div class="categories__items">
+        <a href="#">
+          <div class="category__item">
+            <div class="categories__img">
+              <img src="docs/img/eso.webp">
+            </div>
+            <p class="category__name">Huiles essentielle</p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category__item">
+            <div class="categories__img">
+              <img src="docs/img/bio.jpg">
+            </div>
+            <p class="category__name">Huiles bio</p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category__item">
+            <div class="categories__img">
+              <img src="docs/img/compl.png">
+            </div>
+            <p class="category__name">Huiles complement alimentaire</p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category__item">
+            <div class="categories__img">
+              <img src="docs/img/coffer.jpg">
+            </div>
+            <p class="category__name">coffer </p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category__item">
+            <div class="categories__img">
+              <img src="docs/products-huiles/details1.jpg">
+            </div>
+            <p class="category__name">Huiles de Cheveux</p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category__item">
+            <div class="categories__img">
+              <img src="docs/img/visage.jfif">
+            </div>
+            <p class="category__name">Huiles Visage</p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category__item">
+            <div class="categories__img">
+              <img src="docs/img/arganoil.jpg">
+            </div>
+            <p class="category__name">Huiles Argan</p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category__item">
+            <div class="categories__img">
+              <img src="docs/img/corps.webp">
+            </div>
+            <p class="category__name">Huile Corps</p>
+          </div>
+        </a>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====flash deals===-->
+
+  <section class="flash">
+    <div class="top-flash">
+      <div class="flash-header">
+        <h3 class="related__tilte">Fla<span><i class="fa-solid fa-bolt-lightning"></i> </span>h Deals</h3>
+        <ul class="time-list">
+          <li>2D</li>:
+          <li>12</li>:
+          <li>04</li>:
+          <li>20</li>
+        </ul>
+      </div>
+      <a href="cadeux.html" class="link-prod">Voir plus <i class="ri-arrow-right-s-line"></i></a>
+    </div>
+
+  </section>
+
+
+  <div class="product-featured">
+
+
+    <div class="showcase-wrapper has-scrollbar scroll-s">
+
+      <div class="showcase-container p11">
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <a href="details.html"><img src="docs/img2/promo.png" alt="Rose Gold diamonds Earring"
+                class="showcase-img"></a>
+          </div>
+
+          <div class="showcase-content">
+
+
+
+            <h3 class="showcase-title">
+              <a href="details.html" class="showcase-title">Bio Huile Essentielle De Oud</a>
+            </h3>
+
+            <p class="showcase-desc">
+              Huile essentielle de OUD est antioxydant naturel. Il calme le corps et l'esprit.Il lutter contre les
+              troubles du sommeil et le cholestérol
+            </p>
+
+            <div class="price-box">
+              <p class="price">200.00Dhs</p>
+              <del>350.00 Dhs</del>
+            </div>
+
+            <button class="add-cart-btn">add to cart</button>
+
+            <div class="showcase-status">
+              <div class="wrapper">
+                <p> already sold: <b>15</b> </p>
+
+                <p> available: <b>40</b> </p>
+              </div>
+
+              <div class="showcase-status-bar"></div>
+            </div>
+
+            <!-- <div class="countdown-box">
+      
+              <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+      
+              <div class="countdown">
+                <div class="countdown-content">
+                  <p class="display-number">03</p>
+                  <p class="display-text">Days</p>
+                </div>
+      
+                <div class="countdown-content">
+                  <p class="display-number">12</p>
+                  <p class="display-text">Hours</p>
+                </div>
+      
+                <div class="countdown-content">
+                  <p class="display-number">59</p>
+                  <p class="display-text">Min</p>
+                </div>
+      
+                <div class="countdown-content">
+                  <p class="display-number">00</p>
+                  <p class="display-text">Sec</p>
+                </div>
+              </div>
+      
+            </div> -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="showcase-container p22">
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <a href="details.html"><img src="docs//products-huiles/11.webp" alt="Rose Gold diamonds Earring"
+                class="showcase-img"></a>
+          </div>
+
+          <div class="showcase-content">
+
+
+
+            <h3 class="showcase-title">
+              <a href="details.html" class="showcase-title">Bio Huile Essentielle De Oud</a>
+            </h3>
+
+            <p class="showcase-desc">
+              Huile essentielle de OUD est antioxydant naturel. Il calme le corps et l'esprit.Il lutter contre les
+              troubles du sommeil et le cholestérol
+            </p>
+
+            <div class="price-box">
+              <p class="price">200.00Dhs</p>
+              <del>350.00 Dhs</del>
+            </div>
+
+            <button class="add-cart-btn">add to cart</button>
+
+            <div class="showcase-status">
+              <div class="wrapper">
+                <p> already sold: <b>30</b> </p>
+
+                <p> available: <b>60</b> </p>
+              </div>
+
+              <div class="showcase-status-bar full"></div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="trending__products">
+      <div class="trn__produit">
+        <div class="trn__img">
+          <a href="details.html">
+            <img src="docs/products-huiles/offer.jpg">
+          </a>
+        </div>
+        <div class="trn__content">
+          <h1>Bio Huile Essentielle de Menthe Pouliot BIO 100% nature</h1>
+          <div class="product__rating turn-star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+
+          <div class="trn__prix">
+            <span class="trn__new">100.00 Dhs</span>
+            <span class="old">200.00 Dhs</span>
+          </div>
+
+          <span class="tr__sold">(2965 solde )</span>
+        </div>
+      </div>
+
+      <div class="trn__produit">
+        <div class="trn__img">
+          <a href="details.html">
+            <img src="docs/products-huiles/pack1.jpg" alt="">
+          </a>
+        </div>
+        <div class="trn__content">
+          <h1>Bio Huile Essentielle de Menthe Pouliot BIO 100% nature</h1>
+          <div class="product__rating turn-star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+
+          <div class="trn__prix">
+            <span class="trn__new">130.00 Dhs</span>
+            <span class="old">270.00 Dhs</span>
+          </div>
+
+          <span class="tr__sold">(2965 solde )</span>
+        </div>
+      </div>
+      <div class="trn__produit">
+        <div class="trn__img">
+          <a href="details.html">
+            <img src="docs/huiles complement/19.jpg" alt="">
+
+          </a>
+        </div>
+        <div class="trn__content">
+          <h1>Bio Huile Essentielle de Menthe Pouliot BIO 100% nature</h1>
+          <div class="product__rating turn-star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+
+          <div class="trn__prix">
+            <span class="trn__new">90.00 Dhs</span>
+            <span class="old">1200.00 Dhs</span>
+          </div>
+
+          <span class="tr__sold">(2965 solde )</span>
+        </div>
+      </div>
+      <div class="trn__produit">
+        <div class="trn__img">
+          <a href="details.html"><img src="docs/img2/1.png" alt=""></a>
+        </div>
+        <div class="trn__content">
+          <h1>Bio Huile Essentielle de Menthe Pouliot BIO 100% nature</h1>
+          <div class="product__rating turn-star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+
+          <div class="trn__prix">
+            <span class="trn__new">220.00 Dhs</span>
+            <span class="old">300.00 Dhs</span>
+          </div>
+
+          <span class="tr__sold">(2965 solde )</span>
+        </div>
+      </div>
+
+      <div class="trn__produit">
+        <div class="trn__img">
+          <a href="details.html"><img src="docs/products-huiles/details1.jpg" alt=""></a>
+        </div>
+        <div class="trn__content">
+          <h1>Bio Huile Essentielle de Menthe Pouliot BIO 100% nature</h1>
+          <div class="product__rating turn-star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+
+          <div class="trn__prix">
+            <span class="trn__new">100.00 Dhs</span>
+            <span class="old">200.00 Dhs</span>
+          </div>
+
+          <span class="tr__sold">(2965 solde )</span>
+        </div>
+      </div>
+      <div class="trn__produit">
+        <div class="trn__img">
+          <a href="details.html"><img src="docs/products-huiles/24.jpg" alt=""></a>
+        </div>
+        <div class="trn__content">
+          <h1>Bio Huile Essentielle de Menthe Pouliot BIO 100% nature</h1>
+          <div class="product__rating turn-star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+
+          <div class="trn__prix">
+            <span class="trn__new">100.00 Dhs</span>
+            <span class="old">200.00 Dhs</span>
+          </div>
+
+          <span class="tr__sold">(2965 solde )</span>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- PRODUCTS -->
+
+  <section class="products  container ">
+
+
+    <div class=" pipo" id="all_products">
+
+    </div>
+
+
+
+  </section>
+
+
+  <!-- =====coupon=== -->
+
+  <div class="remise-part">
+    <div class="remise__content">
+      <h1 class="title__remise">
+        Obtenez 5% De Remise En Argent
+      </h1>
+      <span class="alert__remise">
+        <span class="alert-bio">
+          bioetbienetre.ma
+        </span>
+        <span class="emoji">
+          <i class="ri-emoji-sticker-fill"></i>
+        </span>
+      </span>
+      <div class="btn-remise">
+        <a href="#">Apprendre Plus</a>
+      </div>
+    </div>
+    <div class="img__remise">
+      <img src="docs/img/cards.avif" alt="">
+    </div>
+  </div>
+
+
+  <!--Discount -->
+
+  <section class="discount">
+    <div class="discount__content">
+      <h2 class="discount__title">Join Our Newsletter</h2>
+      <span class="alert__discount">Get E-mail updates about our latest shop and <span>special offers</span></span>
+    </div>
+    <div class="discount__input">
+      <i class="ri-mail-line"></i>
+      <input type="email" class="put-mail" placeholder="Your email address">
+      <a href="#" class="btn-discount">Sign Up</a>
+    </div>
+
+
+
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+    <div class="footer__container">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="docs/imgs-products/logo.png" class="footer__logo-img">
+        </a>
+        <h4 class="footer__subtitle">Contact</h4>
+        <p class="footer__description">
+          <span>Adress:</span> 999 Marrakech, OFPPT street Dwar Dlam
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span> +212 675789976
+        </p>
+        <p class="footer__description">
+          <span> Hours:</span> 9:00 - 20:00
+        </p>
+
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Us</h4>
+
+          <div class="footer__social-links">
+            <a href="#"><i id="fb" class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i id="insta" class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i id="tiktok" class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i id="twiter" class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__subtitle">Address</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">About Us</a></li>
+          <li><a href="#" class="footer__link">Delivery information</a></li>
+          <li><a href="#" class="footer__link">Privery Policy</a></li>
+          <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+          <li><a href="#" class="footer__link">Support</a></li>
+        </ul>
+
+
+      </div>
+
+      <div class="footer__content">
+        <h4 class="footer__subtitle">My Account</h4>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Sign in</a></li>
+          <li><a href="#" class="footer__link"> View Cart</a></li>
+          <li><a href="#" class="footer__link">My Wishlist</a></li>
+          <li><a href="#" class="footer__link">Track My Order</a></li>
+          <li><a href="#" class="footer__link">Help</a></li>
+          <li><a href="#" class="footer__link">Order</a></li>
+        </ul>
+
+
+      </div>
+
+      <div class="footer__content">
+        <h4 class="footer__subtitle">Secured Payment Gateways</h4>
+        <img src="docs/img/payment-method.png" class="payment__img" alt="">
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2023 BIO ET BIEN ETRE </p>
+      <span class="dev">Developed By : <span>Sari - Aimran -Ibba-ali sba3 - <br>MARKHI Sara- Ben ssaoud
+          Salma</span></span>
+    </div>
+  </footer>
+
+
+  <!-- ===== button-top=== -->
+  <span class="btn-top" id="totop">
+    <i class="ri-arrow-up-double-line"></i>
+  </span>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="docs/js/main.js"></script>
+</body>
+
+</html>

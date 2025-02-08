@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="docs/css/style2.css" />
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <div class="loader"></div>
+
+  <!-- ====container=== -->
+  <section class="main">
+    <form action="" class="form__livr">
+      <div class="adresse">
+        <div class="adresse__left">
+          <h1 class="title">Adresse de livraison</h1>
+          <div class="nom">
+            <label for="name">Nom:</label><br>
+            <div class="inputs">
+              <input type="text" placeholder="Prénom">
+              <input type="text" placeholder="Nom">
+            </div>
+          </div>
+          <div class="input__adresse1">
+            <label for="adresse">Ligne d'adresse 1:</label><br>
+            <input type="text" placeholder="Rue et numéro,nom de l'entreprise,c/o">
+          </div>
+          <div class="select__pays">
+            <label for="pays">Pays / Région:</label><br>
+            <select name="pays">
+              <option value="France" selected="selected">Morocco </option>
+              <option value="Afghanistan">France </option>
+              <option value="Afrique_Centrale">Afrique_Centrale </option>
+              <option value="Afrique_du_sud">Afrique_du_Sud </option>
+              <option value="Albanie">Albanie </option>
+              <option value="Algerie">Algerie </option>
+              <option value="Allemagne">Allemagne </option>
+              <option value="Andorre">Andorre </option>
+              <option value="Angola">Angola </option>
+              <option value="Anguilla">Anguilla </option>
+              <option value="Arabie_Saoudite">Arabie_Saoudite </option>
+              <option value="Argentine">Argentine </option>
+            </select>
+          </div>
+          <div class="input__ville">
+            <label for="ville">Ville:</label><br>
+            <input type="text" placeholder="Votre Ville">
+          </div>
+          <div class="chk">
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox">
+                </td>
+                <td>
+                  <span>Définir comme adresse de livraison par défaut.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+
+
+        </div>
+        <div class="adresse__right">
+          <div class="input__tele">
+            <label for="tele">Téléphone</label><br>
+            <div class="tele__flex">
+              <input class="teleput" type="tel" placeholder="Votre téléphone">
+              <span class="dropt">Pourquoi demander?</span>
+            </div>
+          </div>
+          <div class="input__adresse2">
+            <label for="adresse">Ligne d'adresse 2:</label><br>
+            <input type="text" placeholder="Appartement,suite,unité,batiment,étage,etc">
+          </div>
+          <div class="input__zipcode">
+            <label for="zipcode">ZIP/Code postal:</label><br>
+            <input type="number" placeholder="Votre code postal">
+          </div>
+
+          <div class="btns">
+            <button class="btnclose">Annuler</button>
+            <button class="btnsave">Enregistrer</button>
+          </div>
+
+        </div>
+
+      </div>
+    </form>
+    <div class="coupons">
+      <h1 class="title">Réductions</h1>
+      <div class="input__coupons">
+        <label for="coupons" class="labelcoup">coupons</label>
+        <div class="put__coupons">
+          <input type="text" placeholder="Entrer le code promotionnel">
+          <button class="btnclose">Appliquet</button>
+        </div>
+        <hr>
+        <div class="pricediv">
+          <h1>Total</h1>
+          <div class="totalcmd">
+            <span class="para__price">Total de la commande :</span>
+            <span class="proce"></span>
+          </div>
+          <div class="total">
+            <span class="para__price">Paiement total :</span>
+            <span class="total-price"></span>
+          </div>
+          <a href="#" class="btncmd">Passer la commande</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pay">
+    <div class="payement">
+      <h3 class="title">méthodes de payement</h3>
+      <h4 class="mini-title">Paiement en ligne</h4>
+      <img src="docs/img/payment-method.png" class="img-pay">
+    </div>
+
+    <div class="cmd">
+      <h1 class="title" id="oo"></h1>
+      <hr>
+      <div class="items has-scrollbar">
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+  <script src="docs/js/checkout.js"></script>
+</body>
+
+</html>

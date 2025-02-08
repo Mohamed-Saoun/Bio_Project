@@ -1,0 +1,128 @@
+[
+    {
+        "id":13,
+        "image_principale":"docs/products-huiles/1.19pg.jpg",
+        "image_second":"docs/products-huiles/1.19pg.jpg",
+        "promo":"-12%",
+        "rev":"(1.300)",
+        "category":"Huiles essentielles",
+        "name":"MYRITUAL Huile essentielle de Cannelle, Qualité Thérapeutique",
+        "new_price":"120.00 Dhs",
+        "old_price":"140.00 Dhs"
+    },
+    {
+        "id":14,
+        "image_principale":"docs/products-huiles/24.jpg",
+        "image_second":"docs/products-huiles/24.jpg",
+        "promo":"-50%",
+        "rev":"(1040)",
+        "category":"Huiles compele",
+        "name":"Huile essentielle OUD Bouquet Bio Naturel Por Humidificateur Diffuseur de Parfum",
+        "new_price":"200.00 Dhs",
+        "old_price":"100.00 Dhs"
+    },
+    {
+        "id":15,
+        "image_principale":"docs/products-huiles/details1.jpg",
+        "image_second":"docs/products-huiles/details1.jpg",
+        "promo":"-15%",
+        "rev":"(140)",
+        "category":"Huiles essentielles",
+        "name":"Bio Huile Essentielle de Menthe Pouliot BIO 100% naturel",
+        "new_price":"154.00 Dhs",
+        "old_price":"160.00 Dhs"
+    },
+    {
+        "id":16,
+        "image_principale":"docs/img2/5.png",
+        "image_second":"docs/img2/5.png",
+        "rev":"(2.500)",
+        "category":"Huiles compele",
+        "name":"Huile essentielle de Lavande Bio Naturel Pour Humidificateur Diffuseur de Parfum",
+        "new_price":"143.90 Dhs"
+    },
+    {
+        "id":17,
+        "image_principale":"docs/img2/6.png",
+        "image_second":"docs/img2/6.png",
+        "promo":"-12%",
+        "rev":"(2.500)",
+        "category":"Huiles test",
+        "name":"MYRITUAL Huile essentielle de Cannelle, Qualité Thérapeutique",
+        "new_price":"90.00 Dhs",
+        "old_price":"120.00 Dhs"
+    },
+    {
+        "id":18,
+        "image_principale":"docs/products-huiles/17.jpg",
+        "image_second":"docs/products-huiles/17.jpg",
+        "promo":"-50%",
+        "rev":"(1.000)",
+        "category":"Huiles bio",
+        "name":"Bio Huile Essentielle de Menthe Pouliot BIO 100% naturel",
+        "new_price":"150.00 Dhs",
+        "old_price":"300.00 Dhs"
+    },
+    {
+        "id":19,
+        "image_principale":"docs/products-huiles/15.jpg",
+        "image_second":"docs/products-huiles/15.jpg",
+        "promo":"-12%",
+        "rev":"(400)",
+        "category":"Huiles test",
+        "name":"MYRITUAL Huile essentielle de Cannelle, Qualité Thérapeutique",
+        "new_price":"99.00 Dhs",
+        "old_price":"130.00 Dhs"
+    },
+    {
+        "id":20,
+        "image_principale":"docs/img2/9.png ",
+        "image_second":"docs/img2/9.png ",
+        "rev":"(2.5000)",
+        "category":"Huiles test",
+        "name":"Amlou Huile essentielle de Cannelle, Qualité Thérapeutique",
+        "new_price":"180.90 Dhs"
+    },
+    {
+        "id":21,
+        "image_principale":"docs/huiles complement/1.jpg",
+        "image_second":"docs/huiles complement/1.jpg",
+        "promo":"-12%",
+        "rev":"(2.500)",
+        "category":"Huiles essentielles",
+        "name":"MYRITUAL Huile essentielle de Cannelle, Qualité Thérapeutique",
+        "new_price":"120.00 Dhs",
+        "old_price":"140.00 Dhs"
+    },
+    {
+        "id":22,
+        "image_principale":"docs/huiles complement/10.png",
+        "image_second":"docs/huiles complement/10.png",
+        "rev":"(100)",
+        "category":"Huiles bio",
+        "name":"MYRITUAL Huile essentielle de Cannelle, Qualité Thérapeutique",
+        "new_price":"230.00 Dhs"
+    },
+    {
+        "id":23,
+        "image_principale":"docs/img2/12.png",
+        "image_second":"docs/img2/12.png",
+        "promo":"-12%",
+        "rev":"(2.500)",
+        "category":"Huiles test",
+        "name":"MYRITUAL Huile essentielle de Cannelle, Qualité Thérapeutique",
+        "new_price":"120.00 Dhs",
+        "old_price":"140.00 Dhs"
+    },
+    {
+        "id":24,
+        "image_principale":"docs/products-huiles/23.jpg",
+        "image_second":"docs/products-huiles/23.jpg",
+        "promo":"-12%",
+        "rev":"(2.500)",
+        "category":"Huiles essentielles",
+        "name":"MYRITUAL Huile essentielle de Cannelle, Qualité Thérapeutique",
+        "new_price":"120.00 Dhs",
+        "old_price":"140.00 Dhs"
+    }
+]

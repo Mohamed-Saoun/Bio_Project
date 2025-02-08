@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="docs/css/styles.css" />
+    <title>Ecommerce Website</title>
+  </head>
+
+<body class="has-scrollbar">
+  <!-- =====header==== -->
+  <header>
+    <div class="overdrop" data-overdrop></div>
+
+    <nav class="header__top ">
+      <div class="logo">
+        <a href="index.html">
+          <img src="docs/img/logo.png" class="logo__header">
+        </a>
+      </div>
+      <div class="search-bar show">
+        <input type="search" placeholder="search...">
+        <div class="search-icon">
+          <i id="search" class="ri-search-line"></i>
+          <span class="alert-bar">search</span>
+        </div>
+      </div>
+      <ul class="icons__right">
+        <li><a href="#">
+            <div class="shipping">
+              <span class="alert">Ship to :</span>
+              <img src="docs/img/maroc.png" class="logo-maroc">
+              <span class="alert">Ma</span>
+              <i class="ri-arrow-down-s-line" style="color: #000;"></i>
+            </div>
+          </a></li>
+        <li><a href="#">
+            <div class="long">
+              <i class="ri-global-line"></i>
+              <span class="alert">France</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </a></li>
+        <li><a href="login.html">
+            <div class="account">
+              <i class="ri-user-fill"></i>
+              <span class="alert">sign in</span>
+            </div>
+          </a></li>
+        <li class="open-cart"><a href="cart.html">
+            <div class="cart">
+              <i class="ri-shopping-cart-line"></i>
+              <span class="count-mini" id="count"></span>
+            </div>
+          </a></li>
+        <li><a href="#">
+            <div class="heart">
+              <i class="ri-heart-line"></i>
+              <span class="count-mini">0</span>
+            </div>
+          </a></li>
+      </ul>
+
+
+    </nav>
+    <div class="header__bottom">
+      <ul class="nav-bar-menu">
+        <li>
+          <a href="index.html" class="active-bar">home</a>
+        </li>
+
+        <li class="dropdown">
+          <a href="shop.html">Nos huiles</a>
+          <i class="ri-arrow-down-s-line" id="arrow"></i>
+          <div class="list-fixed " id="category-drop">
+            <div class="drop-category-header">
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Prix</a></li>
+                <li><a href="#">Huiles cosmetiques </a></li>
+                <li><a href="#">Huiles vegetables</a></li>
+                <li><a href="#">Huiles complements alimentaires</a></li>
+                <li><a href="#">Nos selections</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+
+              <ul class="list-item">
+                <li id="first-link"><a href="#">Type de solutions</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+                <li><a href="#">Best-sellers</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </li>
+
+        <li>
+          <a href="fournisseur.html">Nos fournisseurs</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+
+        <li>
+          <a href="docs/SALMA/about1.html">Qui sommes-nous ?</a>
+        </li>
+
+        <li>
+          <a href="contact-us.html">Contact us</a>
+        </li>
+
+        <li>
+          <a href="login.html">Espace Client</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="loader"></div>
+  <!-- ====cart=== -->
+  <div class="cart-drop " id="contetn-cart">
+    <div class="overcart" data-overcart></div>
+
+    <div class="products-cart has-scrollbar">
+
+
+      <span class="total"></span>
+    </div>
+    <a href="cart.html" class="seecart">Voir le panier</a>
+  </div>
+
+  <!-- ======header for mobile=== -->
+
+  <div class="mobil-app-bar">
+    <div class="header-mobile">
+      <div class="top-mini">
+        <div class="logo-left">
+          <i class="ri-menu-line" id="open"></i>
+          <img src="docs/imgs-products/logo.png" class="mini-logo">
+        </div>
+        <div class="mini-icons">
+          <i class="ri-user-line"></i>
+          <i class="ri-shopping-cart-fill"></i>
+        </div>
+      </div>
+
+      <div class="search-part">
+        <input type="search" class="search-put" placeholder="search..">
+        <span class="icon-put"><i class="ri-search-line"></i></span>
+      </div>
+
+
+    </div>
+    <div class="nav-bar-mobile">
+      <ul class="nav-icon-mobile">
+        <li class="active-mobile-app">
+          <a href="index.html">
+            <i class="ri-home-3-line"></i>
+            <span class="alert-icon">Accuell</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="filter-icon" id="filter-show">
+              <i class="ri-equalizer-line"></i>
+              <span class="alert-icon">Filter</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <i class="ri-heart-line"></i>
+            <span class="alert-icon">Heart</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <i class="ri-user-line"></i>
+            <span class="alert-icon">Compte</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="overlay" data-overlay></div>
+  <div class="nav-menu-mobile" id="header-show">
+    <span class="clos-filter"><i class="ri-close-line"></i></span>
+    <div class="logo">
+      <img src="docs/imgs-products/logo.png" class="">
+    </div>
+    <ul class="nav-links-mobile">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Nos huiles</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Account</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <div class="btns-mobile">
+      <a href="login.html" class="login-mobile">
+        <button>Sing in</button>
+      </a>
+      <a href="login.html" class="new-mobile">
+        <button>register</button>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ====end header== -->
+  <!-- Header-Shop -->
+  <section class="head-shop">
+    <ul>
+      <li>Home</li>
+      <li>></li>
+      <li> Huiles</li>
+      <li> ></li>
+      <li> Details</li>
+    </ul>
+
+  </section>
+
+  <!-- ======details of products=== -->
+  <section class="details__products">
+
+    <div class="details__mini-imgs">
+      <img src="" id="test" class="details__img__mini mini1 active-img" onclick="change(this.src)">
+      <img src="" class="details__img__mini mini2" onclick="change(this.src)">
+      <img src="" class="details__img__mini mini3" onclick="change(this.src)">
+      <img src="" class="details__img__mini mini4" onclick="change(this.src)">
+    </div>
+
+    <div class="details__products__container">
+      <div class="details__group">
+        <img src="" class="details__img image">
+        <div class="magnifier"></div>
+      </div>
+      <div class="icon-details">
+        <div class="icon__item">
+          <i class="ri-share-forward-line"></i>
+          <span>Share</span>
+        </div>
+        <div class="icon__item">
+          <i class="ri-question-line"></i>
+          <span>Ask Question</span>
+        </div>
+        <div class="icon__item">
+          <i class="ri-text-wrap"></i>
+          <span>Compare</span>
+        </div>
+        <div class="icon__item">
+          <i class="ri-share-forward-line"></i>
+          <span>Share</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="details__products__info">
+      <h3 class="details__title__product"></h3>
+      <div class="detail__rev">
+        <ul>
+          <li>
+            <div class="product__rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+          </li>
+
+        </ul>
+        <span class="rev-cmpt">3reviews</span>
+
+      </div>
+      <div>
+        <span class="stock">In Stock</span>
+      </div>
+      <div class="details__price">
+        <span class="new-price" id="price_det"></span>
+        <div class="pp">
+          <span class="old-price">140 Dhs</span>
+          <span class="promo" id="promo_det"></span>
+        </div>
+      </div>
+      <div class="btns__actions-de">
+        <div class="qnty-de">
+          <button class="prev">-</button>
+          <input type="text" value="1">
+          <button class="plus">+</button>
+        </div>
+        <div class="btn__adtocart">
+          <button class="btn-de">ADD TO CART</button>
+        </div>
+        <div class="buynow">
+          <button class="btn-de">BUY NOW</button>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-content">
+          <header>
+            <span class="title">INFORMATION</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+
+          <div class="description">
+            <ul class="info-detail-p">
+              <li>Brenad: <span>BIO ET BIEN ETRE</span></li>
+              <li>Scent: <span>Lavender</span></li>
+              <li>Special Feature: <span>Undiluted</span></li>
+              <li>Product Benefits: <span>Hair Growth,Aromatherapy</span></li>
+              <li>Seasons: <span>All Seasons</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-content">
+          <header>
+            <span class="title">Mode d'utilisation</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+
+          <div class="description">
+            <div class="list-mode">
+              <ul>
+                <li>
+                  <div class="min-logo">
+                    <img src="docs/img/min1.png" alt="">
+                  </div>
+                  <h4>Application cutanée et massage</h4>
+                  <div class="pluses">
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <span>Adapté</span>
+                </li>
+                <li>
+                  <div class="min-logo">
+                    <img src="docs/img/mini2.png" alt="">
+                  </div>
+                  <h4>Actif cosmétique</h4>
+                  <div class="pluses">
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <span>Adapté</span>
+                </li>
+                <li>
+                  <div class="min-logo">
+                    <img src="docs/img/mini3.png" alt="">
+                  </div>
+                  <h4>Bain aromatique</h4>
+                  <div class="pluses">
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <span>Possible mais peu recommandé</span>
+                </li>
+                <li>
+                  <div class="min-logo">
+                    <img src="docs/img/mini4.png" alt="">
+                  </div>
+                  <h4>Qualité alimentaire</h4>
+                  <div class="pluses">
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <span>Possible mais peu recommandé</span>
+                </li>
+                <li>
+                  <div class="min-logo">
+                    <img src="docs/img/mini5.png" alt="">
+                  </div>
+                  <h4>Diffusion</h4>
+                  <div class="pluses">
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <span>Déconseillé</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">DETAILS</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+
+          <p class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi,
+            obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim
+            numquam voluptatem?
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+  <!-- ====info-review=== -->
+
+  <section class="details__reviews">
+
+    <div class="tabs__rev">
+      <span class="tab__rev active__tab" data-target="#reviews">Reviews</span>
+      <span class="tab__rev" data-target="#products-details">Products details</span>
+    </div>
+
+    <div class="items">
+      <div class="tab__item active__tab " content id="reviews">
+        <h1 class="titledetails">Avis des clients</h1>
+        <div class="grid-stars">
+          <div class="gridreviews">
+            <div class="stars-list">
+              <h1>4.83 <span>sur 5</span></h1>
+              <div class="stras">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <a href="#">voir tous les 50 <br>commentaires</a>
+            </div>
+          </div>
+
+          <div class="range">
+            <div class="rangea cntr">
+              <span class="alert">5 étoile</span>
+              <span class="range-itema rango"></span>
+              <span class="count-range">70 (80.3%)</span>
+            </div>
+            <div class="rangeb cntr">
+              <span class="alert">4 étoile</span>
+              <span class="range-itemb rango"></span>
+              <span class="count-range">12(6.2%)</span>
+
+            </div>
+            <div class="rangec cntr">
+              <span class="alert">3 étoile</span>
+              <span class="range-itemc rango"></span>
+              <span class="count-range">2 (1.4%)</span>
+            </div>
+            <div class="ranged cntr">
+              <span class="alert">2 étoile</span>
+              <span class="range-itemd rango"></span>
+              <span class="count-range ">2(0.2%)</span>
+
+            </div>
+            <div class="rangee cntr">
+              <span class="alert">1étoile</span>
+              <span class="range-iteme rango"></span>
+              <span class="count-range">20 (0.01%)</span>
+            </div>
+          </div>
+
+          <div class="creatcmnt">
+            <button class="btn-cmnt">
+              Ecrire un commentaires
+            </button>
+            <p>Obtenez le double des points de revue si <br> vous votre revue est l'une des 3 <br>premières publiées !
+            </p>
+          </div>
+
+        </div>
+        <div class="persons__items">
+          <h2 class="big-title">Tous les Commentaires (50)</h2>
+          <div class="person__item">
+            <div class="img-user">
+            </div>
+            <div class="info-user">
+              <span class="name">Sarah</span>
+              <div class="product__rating detail-stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <span class="date">on Mars 13,2023</span>
+              <p class="comnt-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere harum
+                labore ex aliquid pariatur dolore quas veritatis hic corporis?</p>
+            </div>
+          </div>
+
+          <div class="person__item">
+            <div class="img-user2">
+            </div>
+            <div class="info-user">
+              <span class="name">Salma</span>
+              <div class="product__rating detail-stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <span class="date">on Mars 13,2023</span>
+              <p class="comnt-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere harum
+                labore ex aliquid pariatur dolore quas veritatis hic corporis?</p>
+            </div>
+          </div>
+
+          <div class="person__item">
+            <div class="img-user3">
+            </div>
+            <div class="info-user">
+              <span class="name">Samira</span>
+              <div class="product__rating detail-stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <span class="date">on Mars 13,2023</span>
+              <p class="comnt-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere harum
+                labore ex aliquid pariatur dolore quas veritatis hic corporis?</p>
+            </div>
+          </div>
+
+          <a href="#" class="allcmnt">Voir tous les commentaires ></a>
+        </div>
+
+
+
+
+      </div>
+      <div class="tab__item " content id="products-details">
+        <h1 class="titledetail">L’essentiel</h1>
+        <p class="descdetails">
+          Toute allégation laissant penser qu’une huile essentielle en vente libre pourrait prévenir ou traiter une
+          pathologie est interdite.
+          Avant d’utiliser une huile essentielle, assurez-vous que le mode d’utilisation que vous envisagez est bien
+          celui recommandé pour cette huile.
+          Naturel ne veut pas dire inoffensif ! Reportez-vous aux notices d'utilisation accompagnant les produits ou aux
+          fiches publiées sur internet.
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- =====new comment====   -->
+  <div class="overlay" data-overlay></div>
+  <form action="" class="newcmnt" id="cmnt-content">
+    <h2 class="title-cmnt">Ecrire un commentaires</h2>
+    <div class="inputname">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+    </div>
+    <div class="starcunt">
+      <span>Your rating:</span>
+      <div class="product__rating starss">
+        <input type="radio" id="star5">
+        <label for="star5"><i class="ri-star-fill"></i></label>
+        <input type="radio" id="star4">
+        <label for="star4"><i class="ri-star-fill"></i></label>
+        <input type="radio" id="star3">
+        <label for="star4"><i class="ri-star-fill"></i></label>
+        <input type="radio" id="star2">
+        <label for="star4"><i class="ri-star-fill"></i></label>
+        <input type="radio" id="star1">
+        <label for="star4"><i class="ri-star-fill"></i></label>
+      </div>
+    </div>
+    <textarea class="textcmnt" name="reviews" placeholder="Your reviews" cols="" rows="10"></textarea>
+    <button class="btn-cmnt-rev">SUBMIT</button>
+
+    <i class="ri-close-fill" id="close-cmnt"></i>
+
+  </form>
+
+
+
+
+  <!--Discount -->
+
+  <section class="discount">
+    <div class="discount__content">
+      <h2 class="discount__title">Join Our Newsletter</h2>
+      <span class="alert__discount">Get E-mail updates about our latest shop and <span>special offers</span></span>
+    </div>
+    <div class="discount__input">
+      <i class="ri-mail-line"></i>
+      <input type="email" class="put-mail" placeholder="Your email address">
+      <a href="#" class="btn-discount">Sign Up</a>
+    </div>
+
+
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer container">
+    <div class="footer__container">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="docs/imgs-products/logo.png" class="footer__logo-img">
+        </a>
+        <h4 class="footer__subtitle">Contact</h4>
+        <p class="footer__description">
+          <span>Adress:</span> 999 Marrakech, OFPPT street Dwar Dlam
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span> +212 675789976
+        </p>
+        <p class="footer__description">
+          <span> Hours:</span> 9:00 - 20:00
+        </p>
+
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Us</h4>
+
+          <div class="footer__social-links">
+            <a href="#"><i id="fb" class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i id="insta" class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i id="tiktok" class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i id="twiter" class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__subtitle">Address</h3>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">About Us</a></li>
+          <li><a href="#" class="footer__link">Delivery information</a></li>
+          <li><a href="#" class="footer__link">Privery Policy</a></li>
+          <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+          <li><a href="#" class="footer__link">Support</a></li>
+        </ul>
+
+
+      </div>
+
+      <div class="footer__content">
+        <h4 class="footer__subtitle">My Account</h4>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Sign in</a></li>
+          <li><a href="#" class="footer__link"> View Cart</a></li>
+          <li><a href="#" class="footer__link">My Wishlist</a></li>
+          <li><a href="#" class="footer__link">Track My Order</a></li>
+          <li><a href="#" class="footer__link">Help</a></li>
+          <li><a href="#" class="footer__link">Order</a></li>
+        </ul>
+
+
+      </div>
+
+      <div class="footer__content">
+        <h4 class="footer__subtitle">Secured Payment Gateways</h4>
+        <img src="docs/img/payment-method.png" class="payment__img" alt="">
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2023 BIO ET BIEN ETRE </p>
+      <span class="dev">Developed By : <span>Sari - Aimran -Ibaali - <br>Sara- Salma</span></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="docs/js/details.js"></script>
+</body>
+
+</html>
